@@ -30,7 +30,14 @@ body {
   animation: gradientMove 10s ease infinite;
   color: var(--text-color);
 }
-
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.15); 
+  pointer-events: none;
+  z-index: -1;
+}
 section{
     min-height: 100vh;
     color: var(--text-color);
@@ -436,4 +443,5 @@ span{
         text-align: center;
         margin-top: 2rem;
     }
+
 }

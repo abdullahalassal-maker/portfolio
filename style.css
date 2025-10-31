@@ -12,6 +12,7 @@
 }
 
 :root{
+    --gradient-bg: linear-gradient(135deg, #0a0024, #18004a, #2b0080, #001442, #000a1b);
     --bg-color:	#210C3D;
     --second-bd-color: #5810bc;
     --text-color: #fff;
@@ -24,12 +25,10 @@ html{
 }
 
 body {
-    background-image: url("bg-min.png");
-    background-size: cover;       
-    background-repeat: no-repeat; 
-    background-position: center;  
-    background-attachment: scroll; 
-    color: var(--text-color);
+  background: var(--gradient-bg);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: var(--text-color);
 }
 
 section{
@@ -438,5 +437,10 @@ span{
         margin-top: 2rem;
     }
 
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 

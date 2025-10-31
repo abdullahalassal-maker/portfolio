@@ -28,7 +28,7 @@ body {
     background-size: cover;       
     background-repeat: no-repeat; 
     background-position: center;  
-    background-attachment: fixed; 
+    background-attachment: scroll; 
     color: var(--text-color);
 }
 
@@ -437,4 +437,5 @@ span{
         text-align: center;
         margin-top: 2rem;
     }
+
 }

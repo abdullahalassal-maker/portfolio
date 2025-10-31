@@ -24,7 +24,7 @@ window.onscroll = () => {
     });
 };
 let header=document.querySelector('header');
-header.classList.toggle('sticky' ,window.screenY>100);
+header.classList.toggle('sticky', window.scrollY > 100);
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 
@@ -43,4 +43,5 @@ const typed = new Typed('.multipal-text',{
           backspeed:100,
           backDelay:1000,
           loop:true
+
 });

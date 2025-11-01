@@ -290,6 +290,7 @@ span{
     padding: 1.5rem;
     font-size: 1.6rem;
     background-color: var(--bg-color);
+    color: var(--text-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -297,6 +298,7 @@ span{
     width: 49%;
 }
 .contact form textarea {
+    color: var(--text-color);
     resize: none;
 }
 .contact form .btn {
@@ -445,3 +447,4 @@ span{
     }
 
 }
+

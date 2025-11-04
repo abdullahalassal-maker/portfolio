@@ -112,23 +112,22 @@ span{
     line-height: 1.3;
 }
 
-.social-media a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background: transparent;
-    border: 0.2rem solid var(--second-bd-color);
-    border-radius: 50%;
-    font-size: 2rem;
-    color: var(--second-bd-color);
-    margin-right: 1rem;
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
-.social-media a:hover{
-    background-color: var(--second-bd-color);
-    color: var(--bg-color);
-    box-shadow: 0 0 1rem var(--second-bd-color);
+
+.social-icons a {
+  font-size: 1.8rem;
+  color: #beaca7;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--gradient-bg); 
+  transform: scale(1.2);
 }
 
 .btn{
@@ -447,4 +446,5 @@ span{
     }
 
 }
+
 
